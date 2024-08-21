@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Professor Rating Finder",
+    "version": "1.0",
+    "description": "Displays a professor's rating when hovering over their name.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/gradcap16.png",
+        "48": "icons/gradcap48.png",
+        "128": "icons/gradcap128.png"
+      }
+    },
+    "icons": {
+      "16": "icons/gradcap16.png",
+      "48": "icons/gradcap48.png",
+      "128": "icons/gradcap128.png"
+    }
+  }
+  
